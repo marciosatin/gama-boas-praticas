@@ -7,6 +7,10 @@ $fontFamilyDefault: 'Roboto', sans-serif;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $backgroundBlack;
   color: $fontColorWhite;
@@ -14,4 +18,47 @@ body {
 
 h1, h2, h3, h4 {
   font-family: $fontFamilyDefault;
+}
+
+a {
+  display: block;
+}
+
+a {
+
+  & img {
+    & :hover {
+      position:relative;
+      top:-25px;
+      left:-35px;
+      width:500px;
+      height:auto;
+      display:block;
+      z-index:999;
+    }
+  }
+
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-left {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & p {
+    margin-left: 25%;
+    text-align: center;
+  }
 }

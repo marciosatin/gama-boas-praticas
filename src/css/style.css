@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #000;
   color: #fff;
@@ -13,13 +17,117 @@ h1, h2, h3, h4 {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  display: block;
+}
+
+a img :hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 500px;
+  height: auto;
+  display: block;
+  z-index: 999;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-left {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-contain p {
+  margin-left: 25%;
+  text-align: center;
+}
+
 .section {
-  height: 100vh;
   width: 100%;
 }
 
-.background--one, .background--two {
-  background-size: contain;
+.background--one {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.background--one .block-section--one {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.background--one .block-section--one h1 {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+
+.background--two {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.background--two .block-section--two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(10px - 60px);
+  height: 100%;
+}
+.background--two .block-section--two img {
+  max-width: 50%;
+}
+.background--two .block-section--two .text-block--two {
+  height: 100%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .background--one {
+    height: 1000px;
+  }
+  .background--one img {
+    max-width: 80%;
+  }
+
+  .background--two {
+    display: block;
+    text-align: center;
+  }
+  .background--two .block-section--two {
+    display: block;
+  }
+  .background--two .block-section--two img {
+    margin-top: 50px;
+    max-width: 80%;
+    height: auto;
+  }
+  .background--two .block-section--two p {
+    height: 100%;
+    text-align: center;
+  }
+  .background--two .footer-contain img {
+    max-width: 25%;
+  }
+
+  .main-left img {
+    max-width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 ## Template Node FullJS
 
 Para iniciar o projeto:
-`git clone https://github.com/mrdouglasmorais/template-node-fulljs`
+`git clone https://github.com/marciosatin/gama-boas-praticas.git`
 
 Para instalar as dependências:
 `npm i`
