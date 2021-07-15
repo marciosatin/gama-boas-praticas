@@ -1,0 +1,41 @@
+@media (max-width: 600px) {
+    .background--one {
+        height: 1000px;
+
+        & img {
+            max-width: 80%;
+        }
+    }
+    .background--two {
+        display: block;
+        text-align: center;
+
+        .block-section--two {
+            display: block;
+
+            & img {
+                margin-top: 50px;
+                max-width: 80%;
+                height: auto;
+            }
+
+            & p {
+                height: 100%;
+                text-align: center;
+            }
+
+        }
+
+        .footer-contain {
+            & img {
+                max-width: 25%;
+            }
+        }
+    }
+
+    .main-left {
+        & img {
+            max-width: 50%;
+        }
+    }
+}
